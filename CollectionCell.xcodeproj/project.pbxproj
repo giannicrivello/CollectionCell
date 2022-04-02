@@ -13,6 +13,10 @@
 		DAFEAF4327F7CDD4001E24C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFEAF4127F7CDD4001E24C8 /* Main.storyboard */; };
 		DAFEAF4527F7CDD5001E24C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFEAF4427F7CDD5001E24C8 /* Assets.xcassets */; };
 		DAFEAF4827F7CDD5001E24C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFEAF4627F7CDD5001E24C8 /* LaunchScreen.storyboard */; };
+		DAFEAF5427F7CE6E001E24C8 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEAF5227F7CE6E001E24C8 /* CollectionTableViewCell.swift */; };
+		DAFEAF5527F7CE6E001E24C8 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFEAF5327F7CE6E001E24C8 /* CollectionTableViewCell.xib */; };
+		DAFEAF5827F7CE9A001E24C8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEAF5627F7CE9A001E24C8 /* MyCollectionViewCell.swift */; };
+		DAFEAF5927F7CE9A001E24C8 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFEAF5727F7CE9A001E24C8 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DAFEAF4427F7CDD5001E24C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFEAF4727F7CDD5001E24C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFEAF4927F7CDD5001E24C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFEAF5227F7CE6E001E24C8 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		DAFEAF5327F7CE6E001E24C8 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		DAFEAF5627F7CE9A001E24C8 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		DAFEAF5727F7CE9A001E24C8 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		DAFEAF3A27F7CDD4001E24C8 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				DAFEAF5127F7CE35001E24C8 /* CollectionCell */,
+				DAFEAF5027F7CE27001E24C8 /* TableCell */,
 				DAFEAF3B27F7CDD4001E24C8 /* AppDelegate.swift */,
 				DAFEAF3D27F7CDD4001E24C8 /* SceneDelegate.swift */,
 				DAFEAF3F27F7CDD4001E24C8 /* ViewController.swift */,
@@ -63,6 +73,24 @@
 				DAFEAF4427F7CDD5001E24C8 /* Assets.xcassets */,
 				DAFEAF4627F7CDD5001E24C8 /* LaunchScreen.storyboard */,
 				DAFEAF4927F7CDD5001E24C8 /* Info.plist */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		DAFEAF5027F7CE27001E24C8 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEAF5227F7CE6E001E24C8 /* CollectionTableViewCell.swift */,
+				DAFEAF5327F7CE6E001E24C8 /* CollectionTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		DAFEAF5127F7CE35001E24C8 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEAF5627F7CE9A001E24C8 /* MyCollectionViewCell.swift */,
+				DAFEAF5727F7CE9A001E24C8 /* MyCollectionViewCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -125,9 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFEAF5927F7CE9A001E24C8 /* MyCollectionViewCell.xib in Resources */,
 				DAFEAF4827F7CDD5001E24C8 /* LaunchScreen.storyboard in Resources */,
 				DAFEAF4527F7CDD5001E24C8 /* Assets.xcassets in Resources */,
 				DAFEAF4327F7CDD4001E24C8 /* Main.storyboard in Resources */,
+				DAFEAF5527F7CE6E001E24C8 /* CollectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAFEAF4027F7CDD4001E24C8 /* ViewController.swift in Sources */,
+				DAFEAF5827F7CE9A001E24C8 /* MyCollectionViewCell.swift in Sources */,
 				DAFEAF3C27F7CDD4001E24C8 /* AppDelegate.swift in Sources */,
 				DAFEAF3E27F7CDD4001E24C8 /* SceneDelegate.swift in Sources */,
+				DAFEAF5427F7CE6E001E24C8 /* CollectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,21 +322,23 @@
 				DEVELOPMENT_TEAM = 376TJVYKCD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionCell/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = collecitoncell;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hashira.CollectionCell;
+				PRODUCT_BUNDLE_IDENTIFIER = cellectioncell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,21 +352,23 @@
 				DEVELOPMENT_TEAM = 376TJVYKCD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionCell/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = collecitoncell;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hashira.CollectionCell;
+				PRODUCT_BUNDLE_IDENTIFIER = cellectioncell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
